@@ -1,0 +1,20 @@
+image:
+  repository: 192.168.201.163:8080/public/httpd
+  tag: v2.4.23
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+
+persistence:
+  enable: true
+  storageClass: ""
+  accessMode: ReadWriteOnce
+  size: 8Gi
+
+resource:
+  request:
+    memory: 256Mi
+    cpu: 250m
+
+
