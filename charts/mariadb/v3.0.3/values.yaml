@@ -3,7 +3,7 @@
 ##
 image:
   # registry: docker.io
-  repository: 192.168.201.163:8080/public/mariadb
+  repository: 192.168.36.252/public/mariadb
   tag: 10.0.25
   ## Specify a imagePullPolicy
   ## Defaults to 'Always' if image tag is 'latest', else set to 'IfNotPresent'
