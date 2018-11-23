@@ -1,0 +1,9 @@
+appVersion: 1.0.0
+description: nginx 
+name: nginx
+version: 1.0.0
+kewords:
+- nginx
+- http
+home: https://www.nginx.com/
+icon: https://www.nginx.com/wp-content/themes/nginx-new/assets/img/logo.svg
