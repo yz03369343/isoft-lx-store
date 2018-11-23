@@ -6,4 +6,4 @@ kewords:
 - nginx
 - http
 home: https://www.nginx.com/
-icon: https://www.nginx.com/wp-content/themes/nginx-new/assets/img/logo.svg
+icon: http://192.168.36.252:8080/nginx.png
