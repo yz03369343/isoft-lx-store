@@ -15,14 +15,3 @@ spec:
         imagePullPolicy: {{ .Values.image.pullPolicy | quote }}
         ports:
         - containerPort: 80
-        volumeMounts:
-        - mountPath: /var/www/html/
-          name: data
-      volumes:
-      - name: data
-      {{- if .Values.persistence.enabled }}
-        persistentVolumeClaim:
-          claimName: {{ .Values.persistence.existingClaim | default (include "httpd.fullname" .) }}
-      {{- else }}
-        emptyDir: {}
-      {{- end -}}

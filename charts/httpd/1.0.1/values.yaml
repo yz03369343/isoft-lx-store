@@ -6,15 +6,5 @@ image:
 service:
   type: ClusterIP
 
-persistence:
-  enable: true
-  storageClass: ""
-  accessMode: ReadWriteOnce
-  size: 8Gi
-
-resource:
-  request:
-    memory: 256Mi
-    cpu: 250m
 
 
