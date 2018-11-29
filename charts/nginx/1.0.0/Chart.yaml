@@ -6,4 +6,4 @@ kewords:
 - nginx
 - http
 home: https://www.nginx.com/
-icon: http://192.168.36.252:8080/nginx.png
+icon: http://192.168.36.252:5081/nginx.png
