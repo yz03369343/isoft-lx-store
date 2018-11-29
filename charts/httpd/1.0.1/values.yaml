@@ -1,5 +1,5 @@
 image:
-  repository: 192.168.36.252/public/httpd
+  repository: hub.docker.com.cn:5080/public/httpd
   tag: v1.0.0
   pullPolicy: IfNotPresent
 

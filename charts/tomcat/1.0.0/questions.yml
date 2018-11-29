@@ -10,7 +10,7 @@ questions:
   group: "Container Images"
   subquestions:
   - variable: image.repository
-    default: "192.168.36.252/lxapp/tomcat"
+    default: "hub.docker.com.cn:5080/lxapp/tomcat"
     description: "Docker image name"
     type: string
     label: Httpd Image Name

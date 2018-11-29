@@ -1,5 +1,5 @@
 image:
-  repository: 192.168.36.252/lxapp/tomcat
+  repository: hub.docker.com.cn:5080/lxapp/tomcat
   tag: latest
   pullPolicy: IfNotPresent
 
