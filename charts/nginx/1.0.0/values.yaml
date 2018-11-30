@@ -1,5 +1,5 @@
 image:
-  repository: hub.docker.com.cn:5080/lxapp/nginx
+  repository: hub.i-soft.com.cn:5080/lxapp/nginx
   tag: latest
   pullPolicy: IfNotPresent
 

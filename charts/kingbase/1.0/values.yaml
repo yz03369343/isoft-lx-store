@@ -1,5 +1,5 @@
 image:
-  repository: hub.docker.com.cn:5080/lxapp/kingbase
+  repository: hub.i-soft.com.cn:5080/lxapp/kingbase
   tag: adm0.0.2
   pullPolicy: IfNotPresent
 

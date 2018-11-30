@@ -11,7 +11,7 @@ questions:
   group: "Container Images"
   subquestions:
   - variable: image.repository
-    default: "hub.docker.com.cn:5080/lxapp/mariadb"
+    default: "hub.i-soft.com.cn:5080/lxapp/mariadb"
     description: "Docker image name"
     type: string
     label: MariaDB Image Name
