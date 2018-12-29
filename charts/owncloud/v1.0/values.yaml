@@ -6,3 +6,10 @@ image:
 service:
   type: ClusterIP
   port: 80
+
+persistence:
+  enabled: true
+  storageClass: ""
+  accessMode: ReadWriteOnce
+  size: 8Gi
+

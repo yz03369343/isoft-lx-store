@@ -15,4 +15,16 @@ spec:
           imagePullPolicy: {{ .Values.image.pullPolicy | quote }}
           ports:
           - containerPort: 80
+        volumeMounts:
+        - name: data
+          mountPath: /var/www/owncloud
+        volumes:
+        - name: data
+      {{- if .Values.persistence.enabled }}
+        persistentVolumeClaim:
+          claimName: {{ .Values.persistence.existingClaim | default (include "owncloud.fullname" .) }}
+      {{- else }}
+        emptyDir: {}
+      {{- end -}}
+
 
