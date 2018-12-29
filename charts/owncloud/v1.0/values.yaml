@@ -7,9 +7,3 @@ service:
   type: ClusterIP
   port: 80
 
-persistence:
-  enabled: true
-  storageClass: "vol1"
-  accessMode: ReadWriteOnce
-  size: 8Gi
-

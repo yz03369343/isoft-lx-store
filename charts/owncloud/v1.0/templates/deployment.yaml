@@ -20,10 +20,6 @@ spec:
             name: data
       volumes:
         - name: data
-      {{- if .Values.persistence.enabled }}
-          persistentVolumeClaim:
-            claimName: {{ .Values.persistence.existingClaim | default (include "owncloud.fullname" .) }}
-      {{- else }}
-          emptyDir: {}
-      {{- end -}}
+          hostPath:
+            path: /owncloud 
 
