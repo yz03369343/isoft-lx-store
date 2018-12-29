@@ -16,15 +16,14 @@ spec:
           ports:
           - containerPort: 80
           volumeMounts:
-          - name: data
-            mountPath: /var/www/owncloud
-          volumes:
-          - name: data
+          - mountPath: /var/www/owncloud
+            name: data
+      volumes:
+        - name: data
       {{- if .Values.persistence.enabled }}
-            persistentVolumeClaim:
+          persistentVolumeClaim:
             claimName: {{ .Values.persistence.existingClaim | default (include "owncloud.fullname" .) }}
       {{- else }}
-            emptyDir: {}
+          emptyDir: {}
       {{- end -}}
-
 
