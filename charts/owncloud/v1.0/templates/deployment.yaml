@@ -15,11 +15,3 @@ spec:
           imagePullPolicy: {{ .Values.image.pullPolicy | quote }}
           ports:
           - containerPort: 80
-          volumeMounts:
-          - mountPath: /var/www/owncloud
-            name: data
-      volumes:
-        - name: data
-          hostPath:
-            path: /owncloud 
-
