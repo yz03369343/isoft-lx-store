@@ -15,7 +15,7 @@ questions:
     type: string
     label: python Image Name
   - variable: image.tag
-    default: "latest"
+    default: "v2.7"
     description: "Docker image tag"
     type: string
     label: python Image Tag

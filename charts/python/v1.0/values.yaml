@@ -1,6 +1,6 @@
 image:
   repository: hub.i-soft.com.cn:5080/lxapp/python
-  tag: latest
+  tag: v2.7
   pullPolicy: IfNotPresent
 
 service:
