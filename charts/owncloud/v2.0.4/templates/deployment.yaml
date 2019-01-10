@@ -16,7 +16,7 @@ spec:
           ports:
           - containerPort: 80
           volumeMounts:
-          - name: owncloud-device
+          - name: {{ template "owncloud.name" . }}
             mountPath: /var/www/html
       volumes:
        - name: {{ template "owncloud.name" . }}
