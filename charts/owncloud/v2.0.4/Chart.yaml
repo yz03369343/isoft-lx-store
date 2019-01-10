@@ -1,0 +1,10 @@
+appVersion: 2.0.4
+description: owncloud
+name: owncloud
+version: 10.0.10
+kewords:
+- owncloud
+- php
+- http
+home: https://owncloud.org/
+icon: http://hub.i-soft.com.cn:5081/owncloud.png
