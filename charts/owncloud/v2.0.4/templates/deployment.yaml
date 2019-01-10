@@ -16,10 +16,10 @@ spec:
           ports:
           - containerPort: 80
           volumeMounts:
-          - name: {{ template "owncloud.name" . }}
+          - name: {{ template "owncloud.fullname" . }}
             mountPath: /var/www/html
       volumes:
-       - name: {{ template "owncloud.name" . }}
+       - name: {{ template "owncloud.fullname" . }}
          hostPath:
            path: {{ .Values.hostpath.path }} 
 
