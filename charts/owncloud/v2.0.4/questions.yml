@@ -4,7 +4,7 @@ questions:
 - variable: defaultImage
   default: "true"
   description: "是否使用默认镜像？"
-  label: Use Default Image
+  label: 是否使用默认镜像？
   type: boolean
   show_subquestion_if: false
   group: "Container Images"
