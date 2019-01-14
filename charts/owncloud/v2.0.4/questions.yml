@@ -29,7 +29,7 @@ questions:
   subquestions:
   - variable: service.nodePort
     default: ""
-    description: "端口号请在 30000-32767之间)"
+    description: "端口号请在 30000-32767之间选择"
     type: int
     min: 30000
     max: 32767
