@@ -3,43 +3,39 @@ categories:
 questions:
 - variable: defaultImage
   default: "true"
-  description: "是否使用默认镜像？"
   label: 是否使用默认镜像？
   type: boolean
   show_subquestion_if: false
-  group: "Container Images"
+  group: "镜像"
   subquestions:
   - variable: image.repository
     default: "hub.i-soft.com.cn:5080/lxapp/owncloud"
-    description: "Docker image name"
     type: string
-    label: owncloud Image Name
+    label: 镜像名：
   - variable: image.tag
     default: "v2.0.4"
-    description: "Docker image tag"
     type: string
-    label: owncloud Image Tag
+    label: 镜像tag：
 - variable: service.type
   default: "ClusterIP"
-  description: "owncloud K8s Service type"
   type: enum
   options:
     - "ClusterIP"
     - "NodePort"
   required: true
-  label: Kingbase Service Type
+  label: 服务类型：
   show_subquestion_if: "NodePort"
-  group: "Services and Load Balancing"
+  group: "服务"
   subquestions:
   - variable: service.nodePort
     default: ""
-    description: "NodePort port number(to set explicitly, choose port between 30000-32767)"
+    description: "端口号请在 30000-32767之间)"
     type: int
     min: 30000
     max: 32767
-    label: Service NodePort number
+    label: 服务端口号：
 - variable: hostpath.path 
   default: "/data/owncloud"
-  description: "owncloud K8s Hostpath"
+  group: "存储"
   type: string
-  label: owncloud Hostpath
+  label: 存在主机上的目录：
